@@ -149,9 +149,7 @@ def test_code(test_case):
         # Calculate joint angles using Geometric IK method
         l_a1, l_a2, l_a3 = 0.35, 1.25, 0.054
         l_d1, l_d4 = 0.75, 1.50
-        
-       
-    
+           
         ### Case1:
         theta1 = atan2(WC[1], WC[0])
 
@@ -168,17 +166,11 @@ def test_code(test_case):
         theta3 = pi / 2. - angle_b - beta4 
         
  
-            
-            
-            
-        
-        
         R0_3 = T0_1[0:3, 0:3] * T1_2[0:3, 0:3] * T2_3[0:3, 0:3]
         R0_3 = R0_3.evalf(subs = {q1: theta1, q2: theta2, q3: theta3})
        
         R3_6 = R0_3.inv("LU") * ROT_EE
       
-
         # Euler angles from rotation matrix
         
         theta5 = atan2(-sqrt(R3_6[0,2]*R3_6[0,2] + R3_6[2,2]*R3_6[2,2]), R3_6[1,2])
@@ -186,7 +178,6 @@ def test_code(test_case):
         theta4 = atan2(-R3_6[2,2], R3_6[0,2]) 
       
         theta6 = atan2(R3_6[1,1], -R3_6[1,0])
-
 
         T0_EE = T0_EE.evalf(subs = {q1: theta1, q2: theta2, q3: theta3, q4: theta4, q5: theta5, q6: theta6})
         your_ee = T0_EE[0:3, 3]
@@ -244,17 +235,12 @@ def test_code(test_case):
             else:
                 print(ee_offset)
 
-
     else:
         print(ee_offset)
 
 
-
-
     x_EE, y_EE, z_EE = T0_EE[0][3], T0_EE[1][3], T0_EE[2][3]
     
-
-    # 
     #######################################################################################
     
     #######################################################################################
@@ -313,8 +299,6 @@ def test_code(test_case):
         print ("End effector error for y position is: %04.8f" % ee_y_e)
         print ("End effector error for z position is: %04.8f" % ee_z_e)
         print ("Overall end effector offset is: %04.8f units \n" % ee_offset)
-
-
 
 
 if __name__ == "__main__":
