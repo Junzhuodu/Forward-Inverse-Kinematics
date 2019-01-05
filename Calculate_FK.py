@@ -60,12 +60,12 @@ def test_code(test_case):
      
     # Extract rotation matrices from the transformation matrices
     T0_EE = T0_1 * T1_2 * T2_3 * T3_4 * T4_5 * T5_6 * T6_EE
-    theta1 = 
-    theta2 = 
-    theta3 = 
-    theta4 = 
-    theta5 = 
-    theta6 = 
+    theta1 = test_case[2][0]
+    theta2 = test_case[2][1]
+    theta3 = test_case[2][2]
+    theta4 = test_case[2][3]
+    theta5 = test_case[2][4]
+    theta6 = test_case[2][5]
     T0_EE = T0_EE.evalf(subs = {q1: theta1, q2: theta2, q3: theta3, q4: theta4, q5: theta5, q6: theta6})
 
     your_ee = T0_EE[0:3, 3] # <--- Load your calculated end effector value from your forward kinematics
