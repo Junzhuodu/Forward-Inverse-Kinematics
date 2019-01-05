@@ -231,7 +231,7 @@ def test_code(test_case):
             ee_offset = sqrt(ee_x_e**2 + ee_y_e**2 + ee_z_e**2)
 
             if ee_offset > 0.01:
-                print('error!')
+                print('Attentation!')
             else:
                 print(ee_offset)
 
