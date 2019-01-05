@@ -33,7 +33,7 @@ $ catkin_make
 Now that you have a workspace, clone or download this repo into the **src** directory of your workspace:
 ```sh
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/udacity/RoboND-Kinematics-Project.git
+$ git clone https://github.com/Junzhuodu/Forward-Inverse-Kinematics.git
 ```
 
 Now from a terminal window:
@@ -41,7 +41,7 @@ Now from a terminal window:
 ```sh
 $ cd ~/catkin_ws
 $ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
-$ cd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts
+$ cd ~/catkin_ws/src/Forward-Inverse-Kinematics/kuka_arm/scripts
 $ sudo chmod +x target_spawn.py
 $ sudo chmod +x IK_server.py
 $ sudo chmod +x safe_spawner.sh
@@ -54,7 +54,7 @@ $ catkin_make
 
 Add following to your .bashrc file
 ```
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/models
+export GAZEBO_MODEL_PATH=~/catkin_ws/src/Forward-Inverse-Kinematics/kuka_arm/models
 
 source ~/catkin_ws/devel/setup.bash
 ```
