@@ -58,8 +58,8 @@ source ~/catkin_ws/devel/setup.bash
 [//]: # (Image References)
 
 [image1]: ./misc_images/misc1.png
-[image2]: ./misc_images/misc3.png
-[image3]: ./misc_images/misc2.png
+[image2]: ./misc_images/misc4.png
+[image3]: ./misc_images/misc5.png
 
 ### Spend some time playing with KR210 model
 ```
@@ -68,8 +68,30 @@ $ roslaunch kuka_arm forward_kinematics.launch
 If successful, you should see:
 ![alt text][image1]
 
+You can use `tf_echo` command on ROS to easily obtain the transform between parent and child links from the TF display on the left side panel.
+```
+$ rosrun tf tf_echo [reference frame] [target frame] 
+```
+![alt text][image2]
+
+Open another terminal window and type:
+```
+$ rosrun tf tf_echo base_link gripper_link
+```
+You can use the `tf_echo` command to obtain the orientation and position of the end-effector. 
+![alt text][image3]
+
+**As for how to create forward kinematics and inverse kinematics for KR210, you can read the `writeup.md` file.**
+
 ### Debugging Forward Kinematics
+After you finsh your forward kinematics section, you can run `Calculate_FK.py` to verify that each individual transform is correct.
+```
+$ python Calculate_FK.py
+```
 
-
-
+### Debugging Inverse Kinematics
+After you finish your inverse kinematics section, you can run `Calculate_IK.py` to check your inverse calculations. 
+```
+$ python Calculate_IK.py
+```
 
