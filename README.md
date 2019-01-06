@@ -55,6 +55,12 @@ export GAZEBO_MODEL_PATH=~/catkin_ws/src/Forward-Inverse-Kinematics/kuka_arm/mod
 source ~/catkin_ws/devel/setup.bash
 ```
 
+[//]: # (Image References)
+
+[image1]: ./misc_images/misc1.png
+[image2]: ./misc_images/misc3.png
+[image3]: ./misc_images/misc2.png
+
 ### Spend some time playing with KR210 model
 ```
 $ roslaunch kuka_arm forward_kinematics.launch 
