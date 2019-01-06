@@ -12,6 +12,9 @@
 [image4]: ./misc_images/misc7.png
 [image5]: ./misc_images/misc8.png
 [image6]: ./misc_images/misc9.png
+[image7]: ./misc_images/misc3.png
+[image8]: ./misc_images/misc10.png
+[image9]: ./misc_images/misc11.png
 
 ### Kinematic Analysis
 #### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
@@ -45,12 +48,14 @@ Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 5->6 | -pi/2 | 0 | 0 | q6
 6->EE | 0 | 0 | 0.303 | 0
 
+**Note: There are difference between the gripper reference frame as defined in the urdf versus the DH tables. You need to compensate it later.
+![alt text][image8]
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
 
 And here's where you can draw out and show your math for the derivation of your theta angles. 
 
-![alt text][image2]
-
+![alt text][image7]
+![alt text][image9]
 
 
