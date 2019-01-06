@@ -7,7 +7,7 @@
 [//]: # (Image References)
 
 [image1]: ./misc_images/misc1.png
-[image2]: ./misc_images/misc3.png
+[image2]: ./misc_images/misc2.png
 [image3]: ./misc_images/misc2.png
 
 
@@ -16,6 +16,8 @@
 
 
 ![alt text][image1]
+![alt text][image2]
+
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 
