@@ -41,10 +41,6 @@ Now from a terminal window:
 ```sh
 $ cd ~/catkin_ws
 $ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
-$ cd ~/catkin_ws/src/Forward-Inverse-Kinematics/kuka_arm/scripts
-$ sudo chmod +x target_spawn.py
-$ sudo chmod +x IK_server.py
-$ sudo chmod +x safe_spawner.sh
 ```
 Build the project:
 ```sh
@@ -58,4 +54,16 @@ export GAZEBO_MODEL_PATH=~/catkin_ws/src/Forward-Inverse-Kinematics/kuka_arm/mod
 
 source ~/catkin_ws/devel/setup.bash
 ```
+
+### Spend some time playing with KR210 model
+```
+$ roslaunch kuka_arm forward_kinematics.launch 
+```
+If successful, you should see:
+![alt text][image1]
+
+### Debugging Forward Kinematics
+
+
+
 
