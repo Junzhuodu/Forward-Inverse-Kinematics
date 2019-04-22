@@ -60,6 +60,7 @@ source ~/catkin_ws/devel/setup.bash
 [image1]: ./misc_images/misc1.png
 [image2]: ./misc_images/misc4.png
 [image3]: ./misc_images/misc5.png
+[image4]: ./misc_images/Picture1.png
 
 ### Spend some time playing with KR210 model
 ```
@@ -113,4 +114,4 @@ Launch the project:
 $ cd ~/catkin_ws/src/Forward-Inverse-Kinematics/kuka_arm/scripts
 $ ./safe_spawner.sh
 ```
-![alt text][image3]
+![alt text][image4]
