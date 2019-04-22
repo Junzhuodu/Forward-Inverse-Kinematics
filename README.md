@@ -94,4 +94,4 @@ After you finish your inverse kinematics section, you can run `Calculate_IK.py` 
 ```
 $ python Calculate_IK.py
 ```
-
+# Now, you can use your own IK_server to do path planning
