@@ -95,3 +95,22 @@ After you finish your inverse kinematics section, you can run `Calculate_IK.py` 
 $ python Calculate_IK.py
 ```
 # Now, you can use your own IK_server to do path planning
+```
+$ cd ~/catkin_ws
+$ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
+$ cd ~/catkin_ws/src/Forward-Inverse-Kinematics/kuka_arm/scripts
+$ sudo chmod +x target_spawn.py
+$ sudo chmod +x IK_server.py
+$ sudo chmod +x safe_spawner.sh
+```
+Build the project:
+```
+$ cd ~/catkin_ws
+$ catkin_make
+```
+Launch the project:
+```
+$ cd ~/catkin_ws/src/Forward-Inverse-Kinematics/kuka_arm/scripts
+$ ./safe_spawner.sh
+```
+![alt text][image3]
